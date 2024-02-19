@@ -1,0 +1,128 @@
+<html>
+    <head>
+       <meta charset="utf-8">
+    </head>
+   
+    <body>
+      
+       <p><h3><label> Pizza </label></h3></p>
+
+       <style>
+         body{
+             font-family:Harlow,Solid Italic, Arial, sans-serif; 
+             font-size: 20px;
+             font-weight: 300;
+             background-image: url("https://www.italienische-rezepte.net/wp-content/uploads/2021/01/pizza-salami.jpg");  
+             background-size: 70%;
+             background-position: center;
+             background-repeat: no-repeat;
+             background-color: rgb(77, 79, 85);
+             background-position-x: right;
+             color: rgb(24, 25, 25);
+             max-width: 12000px;
+             margin: 10 auto;
+             padding: 10px;
+             text-shadow: #f6f6f8;
+             text-align: left;
+             border: 10px dashed rgb(89, 86, 86);
+            }
+               /* Start Button */
+          button[type="submit"] {
+            background-color: #f67f35;
+            border: 50px;
+            color: rgb(21, 3, 98);
+            padding: 10px 20px;
+            text-align: center;
+            display: inline-block;
+            font-size: 20px;
+            font-style: italic;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+        button[type="submit"]:hover {
+            background-color: #f6f6f8;
+          }
+        button[type="reset"] {
+             background-color: #eb762d;/*5af0d9 */
+            border: 50px;
+            color: rgb(21, 3, 98);
+            padding: 10px 20px;
+            text-align: center;
+            display: inline-block;
+            font-size: 20px;
+            font-style: italic;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+        button[type="reset"]:hover {
+            background-color: #f6f6f8;
+          }
+         input[type="number"] {
+            background-color: #5ae6f0;
+            width: 50px;
+            border-radius: 10px;
+         }
+        
+         label {
+            display: inline;
+            width: auto;
+            border-radius: 50px;
+            /* background-color: rgb(230, 231, 255); */
+            animation-name: pizza;
+            animation-duration: 4s;
+            animation-delay: -2s;
+            animation-direction: alternate-reverse; 
+            animation-iteration-count: 4;
+            background-color: lightblue inset;
+            opacity: 0.5;
+            transform: matrix(1, 0, 0.5, 1, 150, 0);
+         
+        }
+        label:hover{
+         background-color:#5ae6f0; 
+            width: 3.5cm;
+
+        }
+    
+   
+     </style>
+       <form action="RechnungInsgesamt.php" method="post">
+    
+           <p><input type="number" min=0 name="Margherita" ><label>  Margherita 8.99 €</label></p>
+           <p><input type="number" min=0 name="Salami"><label> Salami  9.99 €</label></p>
+           <p><input type="number" min=0 name="Prosciutto"><label> Prosciutto  10.50 €</label></p>
+           <p><input type="number" min=0 name="Funghi"><label> Funghi (mit Pilzen) 12.50 €</label></p>
+           <p><input type="number" min=0 name="Quattro"><label> Quattro Formaggi (mit vier Käsesorten) 11.50€</label></p>
+           <p><input type="number" min=0 name="Diavola"><label> Diavola (mit Salami und Peperoni) 12.50 €</label></p>
+           <p><input type="number" min=0 name="Capricciosa"><label> Capricciosa (Schinken, Pilzen, Artischocken) 14.50€</label></p>
+            
+           <p></p> <p></p> <p></p>
+           <p><h3><label> Getränke </label></h3></p>
+
+           <p><input type="number" min=0 name="Cola"><label> Cola 1.99 €</label></p>
+           <p><input type="number" min=0 name="Fanta"><label> Fanta  1.99 €</label></p>
+           <p><input type="number" min=0 name="Bier"><label> Bier  3.00 €</label></p>
+           <p><input type="number" min=0 name="Wasser"><label> Wasser  2.00 €</label></p>
+           <p><input type="number" min=0 name="Rotwein"><label> Rotwein  5.00 €</label></p >
+
+
+            <p><h3><label> Extra Wünsche</label></h3></p>
+            <p><input type="number" min=0 name="ExKaese"><label> Extra Kaese 1.50 €</label></p >
+            <p><input type="number" min=0 name="ExSalami"><label> Extra Salami 2.00 €</label></p>
+            <p><input type="number" min=0 name="ExChampinion"><label> Extra Champinion  1.50 €</label></p>
+            <p><input type="number" min=0 name="ExJalapenos"><label> Extra Jalapenos  2.00 €</label></p>
+            <p><input type="number" min=0 name="ExOliven"><label>Extra Oliven  2.00 €</label></p>
+          
+
+
+           <p><button type="submit" value="Senden">Bestellen</button>
+              <button type="reset" id="reset">Auswahl aufheben</button></p>
+           
+           
+       </form>
+    </body>
+    </html>
+
+ 
